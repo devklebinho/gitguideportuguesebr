@@ -69,6 +69,50 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git config --global color.ui true` | Ativa a colorização da saída do Git para melhorar a legibilidade |
 | `git config --list` | Exibe todas as configurações do Git (pressione "q" para voltar) |
 
+# Arquivos especiais
+
+## .gitkeep
+
+O arquivo `.gitkeep` é comumente usado em diretórios vazios em repositórios Git para garantir que o Git mantenha o diretório vazio ao ser clonado ou puxado por outros usuários. O Git normalmente não rastreia diretórios vazios, então adicionar um arquivo `.gitkeep` dentro de um diretório vazio força o Git a manter o diretório no controle de versão. Por exemplo:
+
+```bash
+# Criar um diretório vazio
+mkdir meu_diretorio
+
+# Entrar no diretório
+cd meu_diretorio
+
+# Criar o arquivo .gitkeep
+touch .gitkeep
+
+# Adicionar e commitar o arquivo .gitkeep
+git add .gitkeep
+git commit -m "Adiciona arquivo .gitkeep para manter o diretório vazio"
+
+# O diretório vazio agora será rastreado pelo Git
+```
+
+
+
+## .gitignore
+
+O arquivo `.gitignore` é utilizado para especificar quais arquivos e diretórios devem ser ignorados pelo Git. Isso é útil para evitar que arquivos temporários, arquivos de compilação ou qualquer outro tipo de arquivo desnecessário seja incluído no controle de versão. O `.gitignore` pode conter padrões de arquivos ou diretórios que o Git deve ignorar. Por exemplo:
+
+```plaintext
+# Arquivos de compilação
+*.o
+*.out
+
+# Arquivos temporários
+*.tmp
+
+# Diretórios específicos
+temp/
+logs/
+```
+
+Para usar o `.gitignore`, crie um arquivo chamado `.gitignore` na raiz do seu repositório e liste os padrões de arquivos ou diretórios que você deseja ignorar. Depois, adicione e confirme o arquivo `.gitignore` no seu repositório Git. O Git então automaticamente ignorará os arquivos e diretórios especificados, não os rastreando no controle de versão.
+
 ## Autores
 
 - [@devklebinho](https://www.github.com/devklebinho)
