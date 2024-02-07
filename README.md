@@ -16,6 +16,14 @@ O Git é um sistema de controle de versão distribuído amplamente utilizado no 
 
 Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 
+#### Configurações Iniciais
+
+| Comando                       | Descrição                                             | 
+| :---------------------------- | :---------------------------------------------------- | 
+| `git config --global user.name "[seu nome]"` | Configura o nome de usuário globalmente |
+| `git config --global user.email "[seu email]"` | Configura o email do usuário globalmente |
+| `git config --list` | Exibe todas as configurações do Git (pressione "q" para voltar) |
+
 #### Comandos básicos
 
 | Comando      | Descrição                           | 
@@ -24,6 +32,7 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git add`    | Adiciona arquivos ao staging area   | 
 | `git commit` | Salva as alterações no repositório  | 
 | `git status` | Exibe o estado atual do repositório | 
+| `git remote add [nome] [url]`                        | Adiciona um novo repositório remoto ao seu projeto       |
 | `git log`    | Exibe o histórico de commits        |
 
 
@@ -57,17 +66,6 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git merge`      | Mescla uma branch com a branch atual            | 
 | `git rebase`     | Reaplica as alterações de uma branch sobre outra| 
 | `git mergetool`  | Abre uma ferramenta para resolver conflitos     | 
-
-
-#### Configurações
-
-| Comando                       | Descrição                                             | 
-| :---------------------------- | :---------------------------------------------------- | 
-| `git config --global user.name "[seu nome]"` | Configura o nome de usuário globalmente |
-| `git config --global user.email "[seu email]"` | Configura o email do usuário globalmente |
-| `git config --global core.editor "[editor]"` | Configura o editor de texto padrão para mensagens de commit |
-| `git config --global color.ui true` | Ativa a colorização da saída do Git para melhorar a legibilidade |
-| `git config --list` | Exibe todas as configurações do Git (pressione "q" para voltar) |
 
 # Arquivos especiais
 
