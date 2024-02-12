@@ -1,5 +1,5 @@
 
-# Guia Básico do Git
+# 📚Guia Básico do Git
 
 Este é um guia simples para aqueles que querem lembrar dos principais comandos git e acessá-los de forma rápida e objetiva.
 
@@ -76,6 +76,21 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `echo [conteúdo] > [nome_arquivo]`            | Cria um novo arquivo com o conteúdo especificado          |
 | `rm [nome_arquivo]`                           | Remove (apaga) um arquivo                                 |
 | `rm -rf [diretório]`                          | Remove (apaga) um diretório e seu conteúdo recursivamente |
+
+
+#### Desfazendo Alterações no Git
+
+| Comando                                              | Descrição                                                                               | 
+| :--------------------------------------------------- | :-------------------------------------------------------------------------------------- | 
+| `git commit --amend -m "[nova mensagem]"`           | Altera a mensagem do último commit                                                       |
+| `git restore --staged [arquivo]`                    | Remove arquivos do staging area, mas mantém as alterações nos arquivos no diretório de trabalho |
+| `git restore [arquivo]`                             | Desfaz as alterações em um arquivo específico, revertendo para a versão do último commit |
+| `git reset --soft [hash code]`                           | Desfaz o último commit, mantendo as alterações no diretório de trabalho e no staging area |
+| `git reset --mixed [hash code]`                          | Desfaz o último commit, mantendo as alterações no diretório de trabalho, mas removendo do staging area |
+| `git reset --hard [hash code]`                           | Desfaz o último commit, descartando completamente as alterações                           |
+
+> OBS: Um **hash code** no Git é uma sequência alfanumérica única, gerada a partir do conteúdo de um arquivo ou commit. Serve como identificador exclusivo para referenciar commits no histórico do repositório e pode ser obtido utilizando o comando "**`git log`**" que exibe o histórico dos commits e seus respectivos hash codes.
+
 
 
 # Arquivos especiais
