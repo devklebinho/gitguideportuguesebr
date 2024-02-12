@@ -1,5 +1,5 @@
 
-# Guia do Git
+# Guia Básico do Git
 
 Este é um guia simples para aqueles que querem lembrar dos principais comandos git e acessá-los de forma rápida e objetiva.
 
@@ -66,6 +66,17 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git merge`      | Mescla uma branch com a branch atual            | 
 | `git rebase`     | Reaplica as alterações de uma branch sobre outra| 
 | `git mergetool`  | Abre uma ferramenta para resolver conflitos     | 
+
+
+#### Criação e Exclusão de Arquivos
+
+| Comando                                       | Descrição                                                 | 
+| :-------------------------------------------- | :-------------------------------------------------------- | 
+| `touch [nome_arquivo]`                        | Cria um novo arquivo vazio com o nome especificado        |
+| `echo [conteúdo] > [nome_arquivo]`            | Cria um novo arquivo com o conteúdo especificado          |
+| `rm [nome_arquivo]`                           | Remove (apaga) um arquivo                                 |
+| `rm -rf [diretório]`                          | Remove (apaga) um diretório e seu conteúdo recursivamente |
+
 
 # Arquivos especiais
 
