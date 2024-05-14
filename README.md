@@ -56,6 +56,7 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git checkout -b [nome]`          | Cria uma nova branch com o nome especificado e muda para ela |
 | `git branch -d [nome]`            | Apaga a branch especificada                               |
 | `git branch -D [nome]`            | Força a remoção da branch especificada, mesmo que haja commits não mesclados  |
+| `git push origin --delete [nome]` | Apaga a instância remota da branch |
 | `git merge [branch]`              | Mescla uma branch com a branch atual                      | 
 | `git remote`                      | Lista os repositórios remotos configurados                | 
 
