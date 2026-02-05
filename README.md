@@ -41,8 +41,8 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | Comando               | Descrição                                          | 
 | :-------------------- | :------------------------------------------------- | 
 | `git clone`           | Clona um repositório remoto para o repositório local | 
-| `git pull`    | Puxa alterações do repositório remoto e mescla com o repositório local  | 
-| `git fetch`   | Busca alterações do repositório remoto, mas não as mescla automaticamente  | 
+| `git pull`            | Puxa alterações do repositório remoto e mescla com o repositório local  | 
+| `git fetch`           | Busca alterações do repositório remoto, mas não as mescla automaticamente  | 
 | `git push`            | Envia commits locais para um repositório remoto  | 
 | `git pull-request`    | Solicita a integração de mudanças no repositório remoto através de uma pull request |
 
@@ -89,9 +89,6 @@ Abaixo encontra-se algumas tabelas de comandos básicos para o dia a dia.
 | `git reset --soft [hash code]`                           | Desfaz o último commit, mantendo as alterações no diretório de trabalho e no staging area |
 | `git reset --mixed [hash code]`                          | Desfaz o último commit, mantendo as alterações no diretório de trabalho, mas removendo do staging area |
 | `git reset --hard [hash code]`                           | Desfaz o último commit, descartando completamente as alterações                           |
-
-> OBS: Um **hash code** no Git é uma sequência alfanumérica única, gerada a partir do conteúdo de um arquivo ou commit. Serve como identificador exclusivo para referenciar commits no histórico do repositório e pode ser obtido utilizando o comando "**`git log`**" que exibe o histórico dos commits e seus respectivos hash codes.
-
 
 
 # Arquivos especiais
